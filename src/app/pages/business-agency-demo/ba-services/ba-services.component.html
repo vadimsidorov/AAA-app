@@ -1,0 +1,23 @@
+<div id="services" class="services-area pt-100 pb-70">
+    <div class="container">
+        <div class="section-title">
+            <h2>Services We Provide</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-4 col-lg-6 col-md-6" *ngFor="let content of singleServicesBox;">
+                <div class="service-card-one">
+                    <div class="icon">
+                        <i class="{{content.icon}}"></i>
+                    </div>
+                    <h3>
+                        <a routerLink="/{{content.link}}">
+                            {{content.title}}
+                        </a>
+                    </h3>
+                    <p>{{content.desc}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

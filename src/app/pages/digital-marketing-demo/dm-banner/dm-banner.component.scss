@@ -1,0 +1,151 @@
+.marketing-banner-area { 
+    z-index: 1;
+    position: relative;
+    border-bottom: 1px solid #f0f0f0;
+    padding: {
+        top: 160px;
+        bottom: 80px;
+    };
+}
+.marketing-banner-content {
+    padding-right: 15px;
+
+    .sub-title {
+        color: var(--primaryColor);
+        margin-bottom: 15px;
+        font-weight: 500;
+        display: block;
+    }
+    h1 {
+        margin-bottom: 10px;
+        font-size: 60px;
+    }
+    p {
+        max-width: 550px;
+    }
+    .default-btn-two {
+        margin-top: 10px;
+    }
+}
+.marketing-banner-image {
+    text-align: center;
+    padding-left: 15px;
+}
+.dm-shape1 {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .marketing-banner-area { 
+        padding: {
+            top: 130px;
+            bottom: 50px;
+        };
+    }
+    .marketing-banner-content {
+        padding-right: 0;
+        text-align: center;
+    
+        .sub-title {
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 35px;
+            margin-bottom: 8px;
+        }
+        p {
+            max-width: 100%;
+        }
+        .default-btn-two {
+            margin-top: 5px;
+        }
+    }
+    .marketing-banner-image {
+        padding-left: 0;
+        margin-top: 25px;
+    }
+    .dm-shape1 {
+        display: none;
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .marketing-banner-area { 
+        padding: {
+            top: 150px;
+            bottom: 80px;
+        };
+    }
+    .marketing-banner-content {
+        padding-right: 0;
+        text-align: center;
+    
+        .sub-title {
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 15px;
+            max-width: 540px;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+        }
+        .default-btn-two {
+            margin-top: 5px;
+        }
+    }
+    .marketing-banner-image {
+        padding-left: 0;
+        margin-top: 25px;
+    }
+    .dm-shape1 {
+        display: none;
+    }
+    
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .marketing-banner-content {
+        padding-right: 0;
+
+        .sub-title {
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        .default-btn-two {
+            margin-top: 5px;
+        }
+    }
+    .marketing-banner-image {
+        padding-left: 0;
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

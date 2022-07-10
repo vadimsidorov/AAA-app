@@ -1,0 +1,46 @@
+<div class="software-funfacts-area bg-f9f9f9 pb-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                <div class="software-funfacts-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3>14,500</h3>
+                    <span>Happy Users</span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                <div class="software-funfacts-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>3,527</h3>
+                    <span>Good Reviews</span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                <div class="software-funfacts-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-download"></i>
+                    </div>
+                    <h3>100k</h3>
+                    <span>App download</span>
+                </div>
+            </div>
+        </div>
+        <div class="software-video-box">
+            <img src="assets/images/video-thumb.jpg" alt="about-image">
+            <button class="video-btn" (click)="ngxSmartModalService.getModal('popupOne').open()">
+                <i class="fa-solid fa-play"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Video Popup -->
+<div class="video-popup">
+    <ngx-smart-modal #popupOne [identifier]="'popupOne'">
+        <iframe src="https://www.youtube.com/embed/ODfy2YIKS1M" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ngx-smart-modal>
+</div>

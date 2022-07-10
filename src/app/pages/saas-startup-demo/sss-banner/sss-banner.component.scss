@@ -1,0 +1,159 @@
+.saas-banner-area {
+    background-color: #06080e;
+    padding-top: 160px;
+}
+.saas-banner-content {
+    margin-left: auto;
+    max-width: 635px;
+
+    h1 {
+        font-size: 60px;
+        margin-bottom: 15px;
+        color: var(--whiteColor);
+    }
+    p {
+        opacity: 0.9;
+        max-width: 535px;
+        color: var(--whiteColor);
+    }
+    .default-btn {
+        margin-top: 15px;
+    }
+}
+.saas-banner-image {
+    text-align: center;
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .saas-banner-area {
+        padding-top: 130px;
+    }
+    .saas-banner-content {
+        margin-left: 0;
+        max-width: 100%;
+        text-align: center;
+    
+        h1 {
+            font-size: 31px;
+            margin-bottom: 10px;
+        }
+        p {
+            max-width: 100%;
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+    .saas-banner-image {
+        margin-top: 30px;
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .saas-banner-area {
+        .container-fluid {
+            max-width: 540px;
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .saas-banner-area {
+        padding-top: 150px;
+
+        .container-fluid {
+            max-width: 740px;
+        }
+    }
+    .saas-banner-content {
+        margin-left: 0;
+        max-width: 100%;
+        text-align: center;
+    
+        h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+        p {
+            max-width: 535px;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+    .saas-banner-image {
+        margin-top: 30px;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .saas-banner-area {
+        .container-fluid {
+            max-width: 960px;
+        }
+    }
+    .saas-banner-content {
+        margin-left: 0;
+        max-width: 100%;
+    
+        h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+        p {
+            max-width: 100%;
+        }
+        .default-btn {
+            margin-top: 10px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .saas-banner-area {
+        .container-fluid {
+            max-width: 1140px;
+        }
+    }
+    .saas-banner-content {
+        margin-left: 0;
+        max-width: 100%;
+    
+        h1 {
+            font-size: 55px;
+        }
+        p {
+            max-width: 100%;
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+    .saas-banner-area {
+        .container-fluid {
+            max-width: 1920px;
+        }
+    }
+
+}

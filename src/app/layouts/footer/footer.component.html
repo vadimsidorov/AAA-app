@@ -1,0 +1,178 @@
+<!-- Default Footer -->
+<footer
+    class="footer-area"
+    [ngClass]="{'bg-black': router?.url === '/creative-agency' || router?.url === '/freelancer-portfolio' || router?.url === '/saas-startup' || router?.url === '/cyber-security-agency'}"
+    [ngClass]="{'d-none': router?.url === '/marketing-agency' || router?.url === '/personal-portfolio'}"
+>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-footer-widget">
+                    <div
+                        class="logo"
+                        [ngClass]="{'d-none': router?.url === '/creative-agency' || router?.url === '/freelancer-portfolio' || router?.url === '/saas-startup' || router?.url === '/cyber-security-agency'}"
+                    >
+                        <a routerLink="/">
+                            <img src="assets/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div
+                        class="logo d-none"
+                        [ngClass]="{'d-inline-block': router?.url === '/creative-agency' || router?.url === '/freelancer-portfolio' || router?.url === '/saas-startup' || router?.url === '/cyber-security-agency'}"
+                    >
+                        <a routerLink="/">
+                            <img src="assets/images/logo-white.png" alt="white-logo">
+                        </a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://dribbble.com/" target="_blank">
+                                <i class="fa-brands fa-dribbble"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-6">
+                <div class="single-footer-widget pl-4">
+                    <h3>Explore</h3>
+                    <ul class="list">
+                        <li>
+                            <span (click)="onClick('home')">Home</span>
+                        </li>
+                        <li>
+                            <span (click)="onClick('about')">About Us</span>
+                        </li>
+                        <li>
+                            <span (click)="onClick('services')">Services</span>
+                        </li>
+                        <li>
+                            <span (click)="onClick('portfolio')">Portfolio</span>
+                        </li>
+                        <li>
+                            <span (click)="onClick('team')">Team</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-6">
+                <div class="single-footer-widget">
+                    <h3>Quick Links</h3>
+                    <ul class="list">
+                        <li>
+                            <span class="nav-link" (click)="onClick('contact')">Contact Us</span>
+                        </li>
+                        <li>
+                            <span class="nav-link" (click)="onClick('pricing')">Pricing</span>
+                        </li>
+                        <li>
+                            <span class="nav-link" (click)="onClick('faq')">FAQ</span>
+                        </li>
+                        <li>
+                            <a routerLink="/privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a routerLink="/terms-conditions">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-footer-widget">
+                    <h3>Get in Touch</h3>
+                    <ul class="get-in-touch">
+                        <li>
+                            <span>Location:</span>
+                            2750 Quadra Street Victoria, Canada.
+                        </li>
+                        <li>
+                            <span>Phone:</span>
+                            <a href="tel:+324-9442-515">+324-9442-515</a>
+                        </li>
+                        <li>
+                            <span>Email:</span>
+                            <a href="mailto:hello@luaz.com">hello@luaz.com</a>
+                        </li>
+                        <li>
+                            <span>Fax:</span>
+                            <a href="tel:+324-9442-515">+324-9442-515</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <p>© Luaz is Proudly Owned by <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- Footer Only for Marketing Agency -->
+<footer
+    class="marketing-agency-footer d-none"
+    [ngClass]="{'d-block': router?.url === '/marketing-agency'}"
+>
+    <div class="container">
+        <p>© Luaz is Proudly Owned by <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+    </div>
+</footer>
+
+<!-- Footer Only for Personal Portfolio -->
+<footer
+    class="personal-portfolio-footer d-none"
+    [ngClass]="{'d-block': router?.url === '/personal-portfolio'}"
+>
+    <div class="container">
+        <ul class="social-links">
+            <li>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://dribbble.com/" target="_blank">
+                    <i class="fa-brands fa-dribbble"></i>
+                </a>
+            </li>
+        </ul>
+        <p>© Luaz is Proudly Owned by <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+    </div>
+</footer>

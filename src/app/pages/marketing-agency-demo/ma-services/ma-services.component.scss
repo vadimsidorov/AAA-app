@@ -1,0 +1,113 @@
+.service-card-one {
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: var(--transition);
+    background-color: var(--whiteColor);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+    .icon {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+        text-align: center;
+        border-radius: 50%;
+        margin-bottom: 24px;
+        display: inline-block;
+        color: var(--whiteColor);
+        transition: var(--transition);
+    }
+    h3 {
+        transition: var(--transition);
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    p {
+        transition: var(--transition);
+    }
+    &:hover {
+        transform: translateY(-10px);
+        background-color: var(--primaryColor);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        .icon {
+            background-color: var(--whiteColor);
+            color: var(--primaryColor);
+        }
+        h3, a, p {
+            color: var(--whiteColor);
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .service-card-one {
+        padding: 20px 15px;
+    
+        .icon {
+            width: 60px;
+            height: 60px;
+            font-size: 22px;
+            line-height: 60px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 21px;
+            margin-bottom: 8px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .service-card-one {
+        padding: 20px;
+    
+        .icon {
+            width: 65px;
+            height: 65px;
+            font-size: 25px;
+            line-height: 65px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 23px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .service-card-one {
+        padding: 20px;
+
+        .icon {
+            width: 65px;
+            height: 65px;
+            font-size: 25px;
+            line-height: 65px;
+        }
+        h3 {
+            font-size: 23px;
+        }
+    }
+
+}
+
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

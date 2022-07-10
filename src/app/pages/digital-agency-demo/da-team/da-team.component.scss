@@ -1,0 +1,113 @@
+.team-card {
+    margin-bottom: 30px;
+    transition: var(--transition);
+
+    .team-caption {
+        margin-top: 25px;
+
+        h3 {
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 15px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: {
+                top: 15px;
+                bottom: 0;
+            };
+            li {
+                display: inline-block;
+                margin: 0 3px;
+
+                a {
+                    width: 32px;
+                    height: 32px;
+                    font-size: 15px;
+                    line-height: 32px;
+                    border-radius: 50%;
+                    text-align: center;
+                    display: inline-block;
+                    color: var(--blackColor);
+                    background-color: #f1f1f1;
+                    transition: var(--transition);
+
+                    &:hover {
+                        background-color: var(--primaryColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .team-card {
+        .team-caption {
+            margin-top: 15px;
+    
+            h3 {
+                font-size: 21px;
+                margin-bottom: 2px;
+            }
+            p {
+                font-size: 13px;
+            }
+            ul {
+                margin-top: -10px;
+
+                li {
+                    margin: 5px 2px 0;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .team-card {
+        .team-caption {
+            margin-top: 20px;
+    
+            h3 {
+                font-size: 23px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .team-card {
+        .team-caption {
+            h3 {
+                font-size: 24px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

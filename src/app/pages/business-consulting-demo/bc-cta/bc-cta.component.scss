@@ -1,0 +1,75 @@
+.call-to-action-area {
+    &.bg-image {
+        background: {
+            image: url(../../../../assets/images/business-consulting/cta-bg.jpg);
+            position: right center;
+            repeat: no-repeat;
+            size: cover;
+        };
+    }
+}
+.call-to-action-content {
+    color: var(--whiteColor);
+
+    h2 {
+        color: var(--whiteColor);
+        margin-bottom: 0;
+        line-height: 1.4;
+        font-size: 45px;
+    }
+}
+.call-to-action-btn {
+    text-align: end;
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .call-to-action-content {
+        text-align: center;
+
+        h2 {
+            font-size: 25px;
+        }
+    }
+    .call-to-action-btn {
+        text-align: center;
+        margin-top: 18px;
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .call-to-action-content {
+        h2 {
+            font-size: 35px;
+        }
+    }
+    .call-to-action-btn {
+        text-align: start;
+        margin-top: 20px;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .call-to-action-content {
+        h2 {
+            font-size: 39px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

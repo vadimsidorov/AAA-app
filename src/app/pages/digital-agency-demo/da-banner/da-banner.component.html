@@ -1,0 +1,98 @@
+<div class="main-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="main-banner-content">
+                    <span class="sub-title">Luaz Digital Agency</span>
+                    <h1>We're a full-range digital agency</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporthem incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="btn-box">
+                        <button (click)="onClick('contact')" class="default-btn">
+                            Get Started
+                        </button>
+                        <button type="button" class="video-btn" (click)="ngxSmartModalService.getModal('popupOne').open()">
+                            <i class="fa-solid fa-play"></i>
+                            How It Works
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="banner-animation-image">
+                    <img
+                        src="assets/images/banner-shapes/bn-shape1.png"
+                        class="animate__animated animate__fadeInUp animate__delay-0.5s"
+                        alt="image"
+                    />
+                    <img
+                        src="assets/images/banner-shapes/bn-shape2.png"
+                        class="animate__animated animate__fadeInLeft animate__delay-0.5s"
+                        alt="image"
+                    />
+                    <img
+                        src="assets/images/banner-shapes/bn-shape3.png"
+                        class="animate__animated animate__fadeInDown animate__delay-0.5s"
+                        alt="image"
+                    />
+                    <img
+                        src="assets/images/banner-shapes/bn-shape4.png"
+                        class="animate__animated animate__fadeInDown animate__delay-0.5s"
+                        alt="image"
+                    />
+                    <img
+                        src="assets/images/banner-shapes/bn-shape5.png"
+                        class="animate__animated animate__fadeInUp animate__delay-0.5s"
+                        alt="image"
+                    />
+                    <img
+                        src="assets/images/banner-shapes/bn-shape6.png"
+                        class="animate__animated animate__rollIn animate__delay-0.5s"
+                        alt="image"
+                    />
+                    <img
+                        src="assets/images/banner-shapes/bn-shape7.png"
+                        class="animate__animated animate__zoomIn animate__delay-0.5s"
+                        alt="image"
+                    />
+                    <img
+                        src="assets/images/banner-shapes/bn-shape8.png"
+                        class="animate__animated animate__fadeInLeft animate__delay-0.5s"
+                        alt="image"
+                    />
+                    <img
+                        src="assets/images/banner-shapes/bn-shape9.png"
+                        class="animate__animated animate__fadeInUp animate__delay-0.5s"
+                        alt="image"
+                    />
+                    <img
+                        src="assets/images/banner-shapes/bn-shape10.png"
+                        class="animate__animated animate__fadeInDown animate__delay-0.5s"
+                        alt="image"
+                    />
+                    <img
+                        src="assets/images/banner-shapes/bn-shape11.png"
+                        class="animate__animated animate__fadeInUp animate__delay-0.5s"
+                        alt="image"
+                    />
+                    <img
+                        src="assets/images/banner-shapes/bn-shape12.png"
+                        class="animate__animated animate__zoomIn animate__delay-0.5s"
+                        alt="image"
+                    />
+                    <img
+                        src="assets/images/banner-shapes/banner-img1.png"
+                        class="main-pic animate__animated animate__fadeInUp animate__delay-0.5s"
+                        alt="image"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Video Popup -->
+<div class="video-popup">
+    <ngx-smart-modal #popupOne [identifier]="'popupOne'">
+        <iframe src="https://www.youtube.com/embed/ODfy2YIKS1M" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ngx-smart-modal>
+</div>

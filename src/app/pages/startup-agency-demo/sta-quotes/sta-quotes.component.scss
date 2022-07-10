@@ -1,0 +1,143 @@
+.quotes-content {
+    text-align: center;
+    max-width: 755px;
+    margin: {
+        left: auto;
+        right: auto;
+    };
+    p {
+        line-height: 45px;
+        position: relative;
+        color: var(--blackColor);
+        font: {
+            size: 32px;
+            weight: 700;
+        };
+        &::before {
+            top: 0;
+            content: '';
+            width: 211px;
+            left: -150px;
+            height: 154px;
+            position: absolute;
+            display: inline-block;
+            background: {
+                size: cover;
+                repeat: no-repeat;
+                position: center center;
+                image: url(../../../..//assets/images/left-quote.png);
+            };
+        }
+    }
+    .bar {
+        background: var(--gradientColor);
+        margin: 20px auto 25px;
+        height: 35px;
+        width: 2px;
+    }
+    h3 {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    span {
+        font-size: 15px;
+        color: var(--optionalColor);
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .quotes-content {
+        max-width: 100%;
+        
+        p {
+            line-height: 30px;
+            font-size: 18px;
+
+            &::before {
+                top: 0;
+                left: -15px;
+                width: 130px;
+                height: 70px;
+                opacity: .40;
+                background-size: contain;
+            }
+        }
+        .bar {
+            margin: 15px auto 15px;
+            height: 25px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        span {
+            font-size: 13px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .quotes-content {
+        p {
+            line-height: 34px;
+            font-size: 21px;
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .quotes-content {
+        max-width: 530px;
+        
+        p {
+            line-height: 37px;
+            font-size: 23px;
+
+            &::before {
+                left: 0;
+                width: 140px;
+                height: 100px;
+                background-size: contain;
+            }
+        }
+        .bar {
+            margin: 15px auto 15px;
+            height: 30px;
+        }
+        h3 {
+            font-size: 23px;
+            margin-bottom: 5px;
+        }
+        span {
+            font-size: 14px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .quotes-content {
+        p {
+            &::before {
+                left: -50px;
+                opacity: .50;
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

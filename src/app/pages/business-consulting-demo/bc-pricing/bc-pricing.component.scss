@@ -1,0 +1,190 @@
+.bc-pricing-item {
+    padding: 30px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #f3f4f7;
+    transition: var(--transition);
+
+    .pricing-header {
+        border-bottom: 1px solid #e5e4e4;
+        transition: var(--transition);
+        margin: -30px 0 30px;
+        padding: 30px;
+
+        h3 {
+            transition: var(--transition);
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+        .price {
+            color: var(--primaryColor);
+            margin-bottom: 12px;
+            line-height: 1;
+            font: {
+                weight: 700;
+                size: 45px;
+            };
+            span {
+                opacity: 0.9;
+                transition: var(--transition);
+                font: {
+                    size: 14px;
+                    weight: normal;
+                };
+            }
+        }
+    }
+    .features-list {
+        padding-left: 0;
+        margin-bottom: 30px;
+        list-style-type: none;
+
+        li {
+            margin-bottom: 13px;
+
+            &.unactive {
+                text-decoration: line-through;
+                color: #b0b1c0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .ribbon {
+        top: -10px;
+        right: -25px;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        position: absolute;
+
+        span {
+            background-color: var(--whiteColor);
+            text-transform: uppercase;
+            color: var(--blackColor);
+            transform: rotate(45deg);
+            text-align: center;
+            position: absolute;
+            display: block;
+            width: 225px;
+            left: -25px;
+            top: 30px;
+            padding: {
+                top: 8px;
+                bottom: 8px;
+            };
+            font: {
+                size: 14px;
+                weight: 700;
+            };
+        }
+    }
+    &.active, &:hover {
+        color: var(--whiteColor);
+        background-color: #2d2d37;
+
+        .pricing-header {
+            border-bottom-color: #464c59;
+
+            h3 {
+                color: var(--whiteColor);
+            }
+            .price {
+                span {
+                    color: var(--whiteColor);
+                }
+            }
+        }
+        .default-btn {
+            background-color: var(--whiteColor);
+            color: var(--blackColor);
+
+            i {
+                color: var(--blackColor);
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .bc-pricing-item {
+        padding: 20px 15px;
+    
+        .pricing-header {
+            margin: -20px 0 20px;
+            padding: 20px 15px;
+    
+            h3 {
+                margin-bottom: 12px;
+                font-size: 21px;
+            }
+            .price {
+                font: {
+                    size: 30px;
+                };
+                span {
+                    font: {
+                        size: 13px;
+                    };
+                }
+            }
+        }
+        .features-list {
+            margin-bottom: 20px;
+        }
+        .ribbon {
+            span {
+                padding: {
+                    top: 6px;
+                    bottom: 6px;
+                };
+                font: {
+                    size: 13px;
+                };
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    
+    .bc-pricing-item {
+        .pricing-header {
+            h3 {
+                transition: var(--transition);
+                margin-bottom: 15px;
+                font-size: 23px;
+            }
+            .price {
+                font: {
+                    size: 35px;
+                };
+                span {
+                    font: {
+                        size: 14px;
+                    };
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

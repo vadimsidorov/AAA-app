@@ -1,0 +1,133 @@
+.app-about-content {
+    padding-left: 15px;
+
+    .sub-title {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: var(--primaryColor);
+    }
+    h2 {
+        margin-bottom: 15px;
+        font-size: 45px;
+    }
+    .features-text {
+        margin-top: 25px;
+
+        h4 {
+            margin-bottom: 12px;
+            font-size: 25px;
+        }
+    }
+    .default-btn-three {
+        margin-top: 20px;
+    }
+}
+.app-about-image {
+    text-align: center;
+    padding-right: 15px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .app-about-content {
+        padding-left: 0;
+    
+        h2 {
+            margin-bottom: 10px;
+            font-size: 29px;
+        }
+        .features-text {
+            margin-top: 20px;
+    
+            h4 {
+                font-size: 21px;
+                margin-bottom: 10px;
+            }
+        }
+        .default-btn-three {
+            margin-top: 15px;
+        }
+    }
+    .app-about-image {
+        padding-right: 0;
+        margin-bottom: 25px;
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .app-about-content {
+        padding-left: 0;
+    
+        h2 {
+            margin-bottom: 12px;
+            font-size: 37px;
+        }
+        .features-text {
+            margin-top: 20px;
+    
+            h4 {
+                margin-bottom: 10px;
+                font-size: 23px;
+            }
+        }
+        .default-btn-three {
+            margin-top: 20px;
+        }
+    }
+    .app-about-image {
+        padding-right: 0;
+        margin-bottom: 25px;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .app-about-content {
+        padding-left: 0;
+    
+        h2 {
+            margin-bottom: 12px;
+            font-size: 40px;
+        }
+        .features-text {
+            margin-top: 20px;
+    
+            h4 {
+                margin-bottom: 8px;
+                font-size: 23px;
+            }
+        }
+        .default-btn-three {
+            margin-top: 15px;
+        }
+    }
+    .app-about-image {
+        padding-right: 0;
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .app-about-content {
+        padding-left: 0;
+    }
+    .app-about-image {
+        padding-right: 0;
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,66 @@
+<div class="cta-area ptb-100">
+    <div class="container">
+        <div class="cta-content">
+            <span class="sub-title">So What is Next?</span>
+            <h2>Are You Ready? Let's get to Work!</h2>
+            <button type="button" class="default-btn-two" (click)="ngxSmartModalService.getModal('contactPopup').open()">
+                Contact Me <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Popup -->
+<div class="contact-popup">
+    <ngx-smart-modal #contactPopup [identifier]="'contactPopup'">
+        <form class="contact-form">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your name" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email address" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="form-group">
+                        <input type="text" name="phone-number" placeholder="Phone number" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="form-group">
+                        <textarea name="message" class="form-control" placeholder="Your message..." cols="30" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input
+                                name="gridCheck"
+                                value="I agree to the terms and privacy policy."
+                                class="form-check-input"
+                                type="checkbox"
+                                id="gridCheck"
+                            >
+                            <label class="form-check-label" for="gridCheck">
+                                Accept <a routerLink="/terms-conditions">Terms of Services</a> and <a routerLink="/privacy-policy">Privacy Policy</a>
+                            </label>
+                            <div class="help-block with-errors gridCheck-error"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <button type="submit" class="default-btn">Send Message</button>
+                </div>
+            </div>
+        </form>
+    </ngx-smart-modal>
+</div>

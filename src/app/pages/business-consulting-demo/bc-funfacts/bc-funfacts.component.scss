@@ -1,0 +1,95 @@
+.bc-funfacts-area {
+    &.bg-image {
+        background: {
+            color: var(--blackColor);
+            image: url(../../../../assets/images/business-consulting/funfacts-are-bg.jpg);
+            position: center center;
+            repeat: no-repeat;
+            size: cover;
+        };
+    }
+}
+.bc-funfacts-box {
+    border-right: 2px dashed rgba(255, 255, 255, .20);
+    color: var(--whiteColor);
+    margin-bottom: 30px;
+    padding: {
+        top: 20px;
+        right: 30px;
+        bottom: 20px;
+    };
+    h3 {
+        color: var(--primaryColor);
+        margin-bottom: 5px;
+        font-size: 50px;
+        line-height: 1;
+    }
+    .sub-title {
+        display: block;
+    }
+}
+.row {
+    .col-lg-3 {
+        &:last-child {
+            .bc-funfacts-box {
+                &.text-center {
+                    border-right: none;
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .bc-funfacts-box {
+        padding: {
+            top: 15px;
+            right: 20px;
+            bottom: 15px;
+        };
+        h3 {
+            margin-bottom: 5px;
+            font-size: 30px;
+        }
+    }
+    .row {
+        .col-lg-3 {
+            &:last-child, &:nth-child(2) {
+                .bc-funfacts-box {
+                    border-right: none;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .bc-funfacts-box {
+        padding: {
+            top: 15px;
+            right: 20px;
+            bottom: 15px;
+        };
+        h3 {
+            font-size: 42px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

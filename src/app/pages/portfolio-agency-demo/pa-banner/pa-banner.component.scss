@@ -1,0 +1,92 @@
+.agency-portfolio-main-banner {
+    height: 100vh;
+    background: {
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+}
+.portfolio-banner-content {
+    text-align: center;
+    max-width: 700px;
+    margin: {
+        top: 50px;
+        left: auto;
+        right: auto;
+    };
+    .sub-title {
+        display: block;
+        margin-bottom: 18px;
+        letter-spacing: .8px;
+        text-transform: uppercase;
+        color: var(--optionalColor);
+    }
+    h1 {
+        margin-bottom: 12px;
+        font-size: 65px;
+    }
+    p {
+        max-width: 490px;
+        margin: {
+            left: auto;
+            right: auto;
+        };
+    }
+    .default-btn {
+        margin-top: 8px;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .agency-portfolio-main-banner {
+        height: 100%;
+        padding: {
+            top: 130px;
+            bottom: 120px;
+        };
+    }
+    .portfolio-banner-content {
+        max-width: 100%;
+        margin-top: 0;
+
+        .sub-title {
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 35px;
+            margin-bottom: 5px;
+        }
+        p {
+            max-width: 100%;
+        }
+        .default-btn {
+            margin-top: 0;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .portfolio-banner-content {
+        h1 {
+            font-size: 55px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

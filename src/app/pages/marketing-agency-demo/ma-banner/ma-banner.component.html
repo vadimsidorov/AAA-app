@@ -1,0 +1,87 @@
+<div class="home-slides">
+    <owl-carousel-o [options]="homeSlides">
+        <ng-template carouselSlide>
+            <div class="main-banner-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="main-banner-content">
+                                <span class="sub-title">Luaz Marketing Agency</span>
+                                <h1>We are available for marketing</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporthem incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="btn-box">
+                                    <button (click)="onClick('contact')" class="default-btn">
+                                        Get Started
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="main-banner-image">
+                                <img src="assets/images/banner/banner2.png" alt="banner-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="main-banner-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="main-banner-content">
+                                <span class="sub-title">Luaz Marketing Agency</span>
+                                <h1>Connecting people is our business</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporthem incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="btn-box">
+                                    <button type="button" class="video-btn" (click)="ngxSmartModalService.getModal('popupOne').open()">
+                                        <i class="fa-solid fa-play"></i>
+                                        How It Works
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="main-banner-image">
+                                <img src="assets/images/banner/banner1.png" alt="banner-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="main-banner-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="main-banner-content">
+                                <span class="sub-title">Luaz Marketing Agency</span>
+                                <h1>The agency of something creative</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporthem incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="btn-box">
+                                    <button (click)="onClick('contact')" class="default-btn">
+                                        Get Started
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="main-banner-image">
+                                <img src="assets/images/banner/banner3.png" alt="banner-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </owl-carousel-o>
+</div>
+
+<!-- Video Popup -->
+<div class="video-popup">
+    <ngx-smart-modal #popupOne [identifier]="'popupOne'">
+        <iframe src="https://www.youtube.com/embed/ODfy2YIKS1M" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ngx-smart-modal>
+</div>

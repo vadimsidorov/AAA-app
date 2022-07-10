@@ -1,0 +1,91 @@
+.app-faq-accordion {
+    padding-left: 10px;
+}
+.app-faq-image {
+    height: 100%;
+    position: relative;
+    text-align: center;
+    background: {
+        image: url(../../../../assets/images/app/faq-app.jpg);
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    img {
+        display: none;
+    }
+    .link-btn {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        font-weight: 500;
+        position: absolute;
+        color: var(--whiteColor);
+        background: var(--gradientColor);
+        padding: {
+            top: 12px;
+            bottom: 12px;
+        };
+        &:hover {
+            letter-spacing: 1px;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .app-faq-accordion {
+        padding-left: 0;
+    }
+    .app-faq-image {
+        height: auto;
+        background: unset;
+        margin-bottom: 30px;
+
+        img {
+            display: inline-block;
+        }
+        .link-btn {
+            padding: {
+                top: 10px;
+                bottom: 10px;
+            };
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .app-faq-accordion {
+        padding-left: 0;
+    }
+    .app-faq-image {
+        height: auto;
+        background: unset;
+        margin-bottom: 30px;
+
+        img {
+            display: inline-block;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

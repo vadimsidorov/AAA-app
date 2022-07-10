@@ -1,0 +1,28 @@
+<div class="main-banner">
+    <div class="container">
+        <div class="banner-content">
+            <span class="sub-title">Luaz Agency</span>
+            <h1>We're a full-range Business Agency</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut labore et dolore magna aliqua.</p>
+            <div class="btn-box">
+                <button (click)="onClick('contact')" class="default-btn">
+                    Get Started
+                </button>
+                <button type="button" class="video-btn" (click)="ngxSmartModalService.getModal('popupOne').open()">
+                    <i class="fa-solid fa-play"></i>
+                    How It Works
+                </button>
+            </div>
+        </div>
+        <div class="banner-image">
+            <img src="assets/images/banner/banner4.jpg" alt="banner-image">
+        </div>
+    </div>
+</div>
+
+<!-- Video Popup -->
+<div class="video-popup">
+    <ngx-smart-modal #popupOne [identifier]="'popupOne'">
+        <iframe src="https://www.youtube.com/embed/ODfy2YIKS1M" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ngx-smart-modal>
+</div>

@@ -1,0 +1,278 @@
+.consulting-banner-area {
+    z-index: 1;
+    position: relative;
+    background: {
+        size: cover;
+        repeat: no-repeat;
+        position: center center;
+        image: url(../../../../assets/images/business-consulting/consulting-banner-bg.jpg);
+    };
+    padding: {
+        top: 270px;
+        bottom: 200px;
+    };
+    &::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        z-index: -1;
+        position: absolute;
+        background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,1));
+    }
+}
+.consulting-banner-content {
+    max-width: 790px;
+
+    h1 {
+        margin-bottom: 18px;
+        font-size: 55px;
+    }
+    p {
+        max-width: 580px;
+    }
+    .default-btn-two {
+        margin-top: 12px;
+    }
+}
+.contact-content {
+    .contact-form {
+        .form-group {
+            margin-bottom: 20px;
+    
+            label {
+                display: block;
+                margin-bottom: 10px;
+                font: {
+                    size: var(--fontSize);
+                    weight: 500;
+                };
+            }
+            .form-control {
+                transition: var(--transition);
+                border: 1px solid #f9f9f9;
+                background-color: #f9f9f9;
+                font-size: var(--fontSize);
+                color: var(--blackColor);
+                border-radius: 3px;
+                box-shadow: unset;
+                height: 55px;
+                width: 100%;
+                padding: {
+                    left: 15px;
+                    right: 15px;
+                };
+                &::placeholder {
+                    color: var(--optionalColor);
+                    transition: var(--transition);
+                }
+                &:focus {
+                    border-color: var(--primaryColor);
+                    
+                    &::placeholder {
+                        color: transparent;
+                    }
+                }
+            }
+            textarea.form-control {
+                height: auto !important;
+                padding-top: 15px;
+            }
+        }
+        .form-check {
+            color: var(--optionalColor);
+            margin: {
+                top: 5px;
+                bottom: 20px;
+            };
+            a {
+                color: var(--primaryColor);
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            .form-check-label {
+                cursor: pointer;
+                margin-bottom: 0;
+                font-weight: normal;
+            }
+            .form-check-input {
+                cursor: pointer;
+                margin-top: 2px;
+                box-shadow: unset !important;
+    
+                &[type=checkbox] {
+                    border-radius: 3px;
+                }
+                &:checked {
+                    background-color: var(--primaryColor);
+                    border-color: var(--primaryColor);
+                }
+                &:focus {
+                    border-color: var(--primaryColor);
+                }
+            }
+        }
+    }
+    .contact-image {
+        padding-left: 15px;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .consulting-banner-area {
+        padding: {
+            top: 130px;
+            bottom: 60px;
+        };
+        &::before {
+            opacity: .8;
+            background: {
+                image: none;
+                color: var(--whiteColor);
+            };
+        }
+    }
+    .consulting-banner-content {
+        max-width: 100%;
+    
+        h1 {
+            margin-bottom: 12px;
+            font-size: 30px;
+        }
+        p {
+            max-width: 100%;
+        }
+        .default-btn-two {
+            margin-top: 5px;
+        }
+    }
+    .contact-content {
+        .contact-form {
+            .form-group {
+                margin-bottom: 15px;
+
+                label {
+                    font-size: 13px;
+                }
+                .form-control {
+                    font-size: 14px;
+                    height: 50px;
+                }
+            }
+            .form-check {
+                margin-bottom: -3px;
+            }
+        }
+        .contact-image {
+            display: none;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .consulting-banner-area {
+        padding: {
+            top: 160px;
+            bottom: 90px;
+        };
+        &::before {
+            opacity: .8;
+            background: {
+                image: none;
+                color: var(--whiteColor);
+            };
+        }
+    }
+    .consulting-banner-content {
+        max-width: 610px;
+    
+        h1 {
+            margin-bottom: 15px;
+            font-size: 40px;
+        }
+        p {
+            max-width: 540px;
+        }
+        .default-btn-two {
+            margin-top: 5px;
+        }
+    }
+    .contact-content {
+        .contact-form {
+            .form-group {
+                label {
+                    font-size: 14px;
+                }
+                .form-control {
+                    font-size: 14px;
+                }
+            }
+            .form-check {
+                margin-bottom: -5px;
+            }
+        }
+        .contact-image {
+            display: none;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .consulting-banner-area {
+        padding: {
+            top: 220px;
+            bottom: 150px;
+        };
+    }
+    .consulting-banner-content {
+        max-width: 685px;
+    
+        h1 {
+            margin-bottom: 15px;
+            font-size: 50px;
+        }
+        p {
+            max-width: 480px;
+        }
+        .default-btn-two {
+            margin-top: 10px;
+        }
+    }
+    .contact-content {
+        .contact-form {
+            .form-group {
+                label {
+                    font-size: 15px;
+                }
+                .form-control {
+                    font-size: 15px;
+                    height: 50px;
+                }
+            }
+        }
+        .contact-image {
+            padding-left: 0;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

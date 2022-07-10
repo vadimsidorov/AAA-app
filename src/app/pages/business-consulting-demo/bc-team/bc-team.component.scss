@@ -1,0 +1,142 @@
+.bc-team-box {
+    text-align: center;
+    margin-bottom: 30px;
+
+    .image {
+        position: relative;
+
+        .social {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            padding: 25px;
+            position: absolute;
+            visibility: hidden;
+            margin-bottom: 15px;
+            list-style-type: none;
+            transition: var(--transition);
+
+            li {
+                display: inline-block;
+                margin: {
+                    left: 2px;
+                    right: 2px;
+                };
+                a {
+                    width: 35px;
+                    height: 35px;
+                    display: block;
+                    line-height: 35px;
+                    border-radius: 50%;
+                    color: var(--blackColor);
+                    background-color: var(--whiteColor);
+
+                    &:hover {
+                        background-color: var(--primaryColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+    .content {
+        margin-top: 22px;
+
+        h3 {
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+        span {
+            display: block;
+        }
+    }
+    &:hover {
+        .image {
+            .social {
+                opacity: 1;
+                margin-bottom: 0;
+                visibility: visible;
+                
+                li {
+                    a {
+                        &:hover {
+                            background-color: var(--primaryColor);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .bc-team-box {
+        .image {
+            .social {
+                opacity: 1;
+                margin-bottom: 0;
+                visibility: visible;
+            }
+        }
+        .content {
+            margin-top: 18px;
+    
+            h3 {
+                font-size: 21px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .bc-team-box {
+        .image {
+            .social {
+                opacity: 1;
+                margin-bottom: 0;
+                visibility: visible;
+            }
+        }
+        .content {
+            margin-top: 20px;
+    
+            h3 {
+                font-size: 23px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .bc-team-box {
+        .content {
+            margin-top: 20px;
+    
+            h3 {
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

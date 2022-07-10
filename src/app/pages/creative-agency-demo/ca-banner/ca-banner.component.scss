@@ -1,0 +1,167 @@
+.hero-banner {
+    position: relative;
+    z-index: 1;
+    background: {
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    padding: {
+        top: 300px;
+        bottom: 270px;
+    };
+    &.hero-bg1 {
+        background-image: url(../../../../assets/images/banner/hero-banner1.jpg);
+    }
+    &.hero-bg2 {
+        background-image: url(../../../../assets/images/banner/hero-banner2.jpg);
+    }
+    &.hero-bg3 {
+        background-image: url(../../../../assets/images/banner/hero-banner3.jpg);
+    }
+    &::before {
+        top: 0;
+        left: 0;
+        content: "";
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        opacity: .85;
+        position: absolute;
+        background-color: #18181b;
+    }
+}
+.hero-banner-content {
+    text-align: center;
+    max-width: 640px;
+    margin: {
+        left: auto;
+        right: auto;
+    };
+    .sub-title {
+        color: var(--primaryColor);
+        margin-bottom: 20px;
+        font-weight: 500;
+        display: block;
+    }
+    h1 {
+        line-height: 1;
+        font-size: 70px;
+        margin-bottom: 20px;
+        color: var(--whiteColor);
+    }
+    p {
+        font-size: 17px;
+        color: var(--whiteColor);
+    }
+    .default-btn {
+        margin-top: 20px;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .hero-banner {
+        padding: {
+            top: 140px;
+            bottom: 120px;
+        };
+    }
+    .hero-banner-content {
+        max-width: 100%;
+
+        .sub-title {
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 35px;
+            margin-bottom: 8px;
+        }
+        p {
+            font-size: 14px;
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .hero-banner {
+        padding: {
+            top: 170px;
+            bottom: 160px;
+        };
+    }
+    .hero-banner-content {
+        .sub-title {
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 15px;
+            max-width: 540px;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+        }
+        .default-btn {
+            margin-top: 8px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .hero-banner {
+        padding: {
+            top: 220px;
+            bottom: 200px;
+        };
+    }
+    .hero-banner-content {
+        .sub-title {
+            font-size: 16px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 15px;
+        }
+        .default-btn {
+            margin-top: 10px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .hero-banner {
+        padding: {
+            top: 280px;
+            bottom: 250px;
+        };
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

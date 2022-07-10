@@ -1,0 +1,106 @@
+.single-blog-item {
+    margin-bottom: 30px;
+    background-color: var(--whiteColor);
+
+    .image {
+        position: relative;
+        overflow: hidden;
+
+        a {
+            img {
+                transition: var(--transition);
+            }
+        }
+        .post-tag {
+            left: 0;
+            top: 30px;
+            padding: 8px 20px;
+            position: absolute;
+            color: var(--whiteColor);
+            background: var(--primaryColor);
+        }
+    }
+    .content {
+        margin-top: 20px;
+
+        .date {
+            color: var(--primaryColor);
+            margin-bottom: 10px;
+            display: block;
+        }
+        h3 {
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+        .read-more-btn {
+            padding-right: 14px;
+            position: relative;
+            font-weight: 500;
+
+            i {
+                transform: translateY(-50%);
+                position: absolute;
+                right: 0;
+                top: 50%;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .single-blog-item {
+        .image {
+            .post-tag {
+                top: 15px;
+                padding: 6px 15px;
+            }
+        }
+        .content {
+            margin-top: 15px;
+    
+            h3 {
+                font-size: 21px;
+                margin-bottom: 8px;
+            }
+            .read-more-btn {
+                padding-right: 11px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .single-blog-item {
+        .image {
+            .post-tag {
+                padding: 7px 18px;
+            }
+        }
+        .content {
+            h3 {
+                font-size: 23px;
+            }
+            .read-more-btn {
+                padding-right: 12px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

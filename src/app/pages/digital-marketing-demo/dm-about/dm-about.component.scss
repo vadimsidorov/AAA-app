@@ -1,0 +1,135 @@
+.marketing-about-area {
+    border-bottom: 1px solid #f0f0f0;
+}
+.marketing-about-image {
+    padding-right: 15px;
+    text-align: center;
+}
+.marketing-about-content {
+    padding-left: 15px;
+
+    .sub-title {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: var(--primaryColor);
+    }
+    h2 {
+        margin-bottom: 15px;
+        font-size: 45px;
+    }
+    .row {
+        margin-top: -10px;
+    }
+    .box {
+        position: relative;
+        padding-left: 25px;
+        margin-top: 20px;
+
+        i {
+            left: 0;
+            top: 5px;
+            position: absolute;
+            color: var(--primaryColor);
+        }
+        h3 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .marketing-about-image {
+        padding-right: 0;
+        margin-bottom: 25px;
+    }
+    .marketing-about-content {
+        padding-left: 0;
+    
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .row {
+            margin-top: -10px;
+        }
+        .box {
+            padding-left: 19px;
+            margin-top: 18px;
+    
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .marketing-about-image {
+        padding-right: 0;
+        margin-bottom: 25px;
+    }
+    .marketing-about-content {
+        padding-left: 0;
+    
+        h2 {
+            margin-bottom: 10px;
+            font-size: 37px;
+        }
+        .row {
+            margin-top: -10px;
+        }
+        .box {
+            padding-left: 20px;
+            margin-top: 15px;
+            
+            h3 {
+                font-size: 22px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .marketing-about-image {
+        padding-right: 0;
+    }
+    .marketing-about-content {
+        padding-left: 0;
+    
+        h2 {
+            margin-bottom: 12px;
+            font-size: 37px;
+        }
+        .row {
+            margin-top: -10px;
+        }
+        .box {
+            padding-left: 22px;
+            margin-top: 15px;
+            
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

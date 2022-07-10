@@ -1,0 +1,116 @@
+.contact-title {
+    margin-bottom: 25px;
+
+    h2 {
+        font-size: 45px;
+        margin-bottom: 8px;
+        color: var(--whiteColor);
+    }
+    p {
+        color: #cacaca;
+
+        a {
+        color: var(--whiteColor);
+            font-weight: 500;
+        }
+    }
+}
+.contact-form {
+    .form-control {
+        height: 50px;
+        border-radius: 0;
+        font-size: 15px;
+        box-shadow: unset;
+        color: var(--whiteColor);
+        border: 1px solid #29292d;
+        background-color: #29292d;
+        transition: var(--transition);
+        padding: {
+            left: 15px;
+            right: 15px;
+        };
+        &::placeholder {
+            color: #cacaca;
+            transition: var(--transition);
+        }
+        &:focus {
+            background-color: transparent;
+            border-color: var(--primaryColor);
+
+            &::placeholder {
+                color: transparent;
+            }
+        }
+    }
+    textarea.form-control {
+        height: auto;
+        padding-top: 15px;
+    }
+}
+.contact-img {
+    text-align: center;
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .contact-img {
+        margin-bottom: 30px;
+    }
+    .contact-title {
+        margin-bottom: 15px;
+    
+        h2 {
+            font-size: 30px;
+        }
+    }
+    .contact-form {
+        .form-control {
+            height: 45px;
+            font-size: 14px;
+            padding: {
+                left: 10px;
+                right: 10px;
+            };
+        }
+        textarea.form-control {
+            height: auto;
+            padding-top: 10px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .contact-title {
+        h2 {
+            font-size: 37px;
+        }
+    }
+    .contact-img {
+        margin-bottom: 30px;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .contact-title {
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

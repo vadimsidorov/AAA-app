@@ -1,0 +1,161 @@
+.single-team {
+    text-align: center;
+    margin-bottom: 30px;
+    background: var(--gradientColor);
+
+    .image {
+        position: relative;
+
+        &::before {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            content: '';
+            margin: 15px;
+            visibility: hidden;
+            position: absolute;
+            background: var(--blackColor);
+            transition: var(--transition);
+        }
+        .overlay {
+            top: 60%;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            margin: 0 auto;
+            text-align: center;
+            visibility: hidden;
+            position: absolute;
+            transform: translateY(-50%);
+            transition: var(--transition);
+            padding: {
+                left: 15px;
+                right: 15px;
+            };
+            span {
+                color: var(--whiteColor);
+
+                span {
+                    display: block;
+                    margin-top: 5px;
+                    font-weight: 500;
+                }
+            }
+            .social-links {
+                list-style-type: none;
+                padding-left: 0;
+                margin: {
+                    top: 15px;
+                    bottom: 0;
+                };
+                li {
+                    display: inline-block;
+                    margin: 0 3px;
+    
+                    a {
+                        width: 32px;
+                        height: 32px;
+                        font-size: 15px;
+                        line-height: 32px;
+                        text-align: center;
+                        display: inline-block;
+                        color: var(--whiteColor);
+                        transition: var(--transition);
+                        border: 1px solid rgba(255, 255, 255, .25);
+    
+                        &:hover {
+                            background-color: var(--primaryColor);
+                            border-color: var(--primaryColor);
+                            color: var(--whiteColor);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .content {
+        padding: 25px;
+
+        h3 {
+            font-size: 25px;
+            margin-bottom: 6px;
+            color: var(--whiteColor);
+        }
+        span {
+            color: var(--whiteColor);
+            font-size: 15px;
+            opacity: .90;
+        }
+    }
+    &:hover {
+        .image {
+            &::before {
+                opacity: .77;
+                visibility: visible;
+            }
+            .overlay {
+                top: 50%;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .single-team {
+        .content {
+            padding: 20px 15px;
+    
+            h3 {
+                font-size: 21px;
+            }
+            span {
+                font-size: 13px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .single-team {
+        .content {
+            padding: 20px;
+    
+            h3 {
+                font-size: 24px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .single-team {
+        .content {
+            padding: 20px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,91 @@
+<div id="blog" class="blog-area pt-100 pb-70">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">Blog</span>
+            <h2>Latest News from Luaz</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="blog-slides">
+            <owl-carousel-o [options]="blogSlides">
+                <ng-template carouselSlide>
+                    <div class="single-blog-item">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-12 col-md-12">
+                                <div class="image" style="background-image: url(assets/images/blog/blog1.jpg);">
+                                    <img src="assets/images/blog/blog1.jpg" alt="image">
+                                    <a routerLink="/blog-details" class="link-btn"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-12 col-md-12">
+                                <div class="content">
+                                    <span class="date">June 16, 2022</span>
+                                    <h3>
+                                        <a routerLink="/blog-details">
+                                            8 Search Developments You Need to Know About
+                                        </a>
+                                    </h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur ipiscing elit, sed do eiusmod.</p>
+                                    <a class="read-more-btn" routerLink="/blog-details">
+                                        Read More <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-blog-item">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-12 col-md-12">
+                                <div class="image" style="background-image: url(assets/images/blog/blog2.jpg);">
+                                    <img src="assets/images/blog/blog2.jpg" alt="image">
+                                    <a routerLink="/blog-details" class="link-btn"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-12 col-md-12">
+                                <div class="content">
+                                    <span class="date">June 15, 2022</span>
+                                    <h3>
+                                        <a routerLink="/blog-details">
+                                            How Social Media Trends Can Influence Your SEO
+                                        </a>
+                                    </h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur ipiscing elit, sed do eiusmod.</p>
+                                    <a class="read-more-btn" routerLink="/blog-details">
+                                        Read More <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-blog-item">
+                        <div class="row">
+                            <div class="col-xl-5 col-lg-12 col-md-12">
+                                <div class="image" style="background-image: url(assets/images/blog/blog3.jpg);">
+                                    <img src="assets/images/blog/blog3.jpg" alt="image">
+                                    <a routerLink="/blog-details" class="link-btn"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-12 col-md-12">
+                                <div class="content">
+                                    <span class="date">June 14, 2022</span>
+                                    <h3>
+                                        <a routerLink="/blog-details">
+                                            SEO Algorithms: How to Address, and Affect
+                                        </a>
+                                    </h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur ipiscing elit, sed do eiusmod.</p>
+                                    <a class="read-more-btn" routerLink="/blog-details">
+                                        Read More <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>

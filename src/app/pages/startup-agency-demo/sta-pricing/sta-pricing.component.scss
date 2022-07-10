@@ -1,0 +1,184 @@
+.pricing-table {
+    margin-bottom: 30px;
+	text-align: center;
+	border-radius: 5px;
+	padding-bottom: 30px;
+    transition: var(--transition);
+	background: var(--whiteColor);
+	box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.06);
+
+    .pricing-header {
+        margin-bottom: 15px;
+        padding: {
+            top: 30px;
+            left: 20px;
+            right: 20px;
+        };
+        h3 {
+            line-height: 1;
+            font-size: 25px;
+            margin-bottom: 0;
+            transition: var(--transition);
+        }
+    }
+    .price {
+        margin-bottom: 5px;
+        font: {
+            weight: bold;
+            family: var(--headingFontFamily);
+        };
+        span {
+            color: var(--primaryColor);
+            font-size: 45px;
+
+            sup {
+                left: 6px;
+                top: -18px;
+                position: relative;
+                font: {
+                    size: 20px;
+                    weight: normal;
+                };
+            }
+            span {
+                display: inline-block;
+                margin-left: -11px;
+                font: {
+                    size: 16px;
+                    weight: 500;
+                };
+            }
+        }
+    }
+    .pricing-features {
+        ul {
+            padding-left: 0;
+            margin-bottom: 30px;
+            list-style-type: none;
+
+            li {
+                color: #CCDCEA;
+                margin-bottom: 12px;
+                padding-bottom: 12px;
+                text-decoration: line-through;
+                border-bottom: 1px solid #f4f4f4;
+                
+                &.active {
+                    color: var(--optionalColor);
+                    text-decoration: none;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &:first-child {
+                    border-top: 1px solid #f4f4f4;
+                    padding-top: 12px;
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .pricing-table {
+        padding-bottom: 20px;
+    
+        .pricing-header {
+            margin-bottom: 10px;
+            padding: {
+                top: 20px;
+                left: 15px;
+                right: 15px;
+            };
+            h3 {
+                font-size: 21px;
+            }
+        }
+        .price {
+            margin-bottom: 0;
+
+            span {
+                font-size: 35px;
+    
+                sup {
+                    left: 5px;
+                    top: -12px;
+                    font-size: 18px;
+                }
+                span {
+                    margin-left: -10px;
+                    font-size: 15px;
+                }
+            }
+        }
+        .pricing-features {
+            ul {
+                margin-bottom: 20px;
+
+                li {
+                    margin-bottom: 10px;
+                    padding-bottom: 10px;
+                }
+                &:first-child {
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .pricing-table {
+        padding-bottom: 25px;
+    
+        .pricing-header {
+            margin-bottom: 15px;
+            padding: {
+                top: 25px;
+                left: 15px;
+                right: 15px;
+            };
+            h3 {
+                font-size: 23px;
+            }
+        }
+        .price {
+            margin-bottom: 5px;
+            
+            span {
+                font-size: 35px;
+    
+                sup {
+                    top: -12px;
+                    font-size: 18px;
+                }
+                span {
+                    margin-left: -9px;
+                }
+            }
+        }
+        .pricing-features {
+            ul {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

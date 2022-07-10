@@ -1,0 +1,124 @@
+.saas-how-it-works-content {
+    padding-right: 30px;
+
+    ul {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style-type: none;
+
+        li {
+            margin-bottom: 30px;
+            position: relative;
+            padding-left: 75px;
+
+            i {
+                top: 0;
+                left: 0;
+                font-size: 45px;
+                position: absolute;
+                background: var(--gradientColor);
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            h3 {
+                font-size: 25px;
+                margin-bottom: 12px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.white-color {
+        ul {
+            li {
+                color: var(--whiteColor);
+    
+                h3 {
+                    color: var(--whiteColor);
+                }
+                p {
+                    color: var(--whiteColor);
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}
+.saas-how-it-works-image {
+    text-align: center;
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .saas-how-it-works-content {
+        padding-right: 0;
+    
+        ul {
+            li {
+                margin-bottom: 25px;
+                padding-left: 55px;
+    
+                i {
+                    font-size: 35px;
+                }
+                h3 {
+                    font-size: 21px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+    .saas-how-it-works-image {
+        margin-top: 30px;
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .saas-how-it-works-content {
+        padding-right: 0;
+    
+        ul {
+            li {
+                margin-bottom: 25px;
+                padding-left: 65px;
+    
+                i {
+                    font-size: 40px;
+                }
+                h3 {
+                    font-size: 23px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .saas-how-it-works-image {
+        margin-top: 30px;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .saas-how-it-works-content {
+        padding-right: 0;
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

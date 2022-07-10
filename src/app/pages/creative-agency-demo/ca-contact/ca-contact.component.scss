@@ -1,0 +1,194 @@
+.contact-content {
+    padding-left: 15px;
+
+    h2 {
+        margin-bottom: 5px;
+        font-size: 45px;
+    }
+    .contact-form {
+        margin-top: 20px;
+
+        .form-group {
+            margin-bottom: 20px;
+    
+            label {
+                display: block;
+                margin-bottom: 10px;
+                font: {
+                    size: var(--fontSize);
+                    weight: 500;
+                };
+            }
+            .form-control {
+                background-color: var(--whiteColor);
+                border: 1px solid var(--whiteColor);
+                transition: var(--transition);
+                font-size: var(--fontSize);
+                color: var(--blackColor);
+                border-radius: 3px;
+                box-shadow: unset;
+                height: 55px;
+                width: 100%;
+                padding: {
+                    left: 15px;
+                    right: 15px;
+                };
+                &::placeholder {
+                    color: var(--optionalColor);
+                    transition: var(--transition);
+                }
+                &:focus {
+                    border-color: var(--primaryColor);
+                    
+                    &::placeholder {
+                        color: transparent;
+                    }
+                }
+            }
+            textarea.form-control {
+                height: auto !important;
+                padding-top: 15px;
+            }
+        }
+        .form-check {
+            color: var(--optionalColor);
+            margin: {
+                top: 5px;
+                bottom: 20px;
+            };
+            a {
+                color: var(--primaryColor);
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            .form-check-label {
+                cursor: pointer;
+                margin-bottom: 0;
+                font-weight: normal;
+            }
+            .form-check-input {
+                cursor: pointer;
+                margin-top: 2px;
+                box-shadow: unset !important;
+    
+                &[type=checkbox] {
+                    border-radius: 3px;
+                }
+                &:checked {
+                    background-color: var(--primaryColor);
+                    border-color: var(--primaryColor);
+                }
+                &:focus {
+                    border-color: var(--primaryColor);
+                }
+            }
+        }
+    }
+}
+.contact-image {
+    padding-right: 15px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .contact-content {
+        padding-left: 0;
+    
+        h2 {
+            margin-bottom: 4px;
+            font-size: 30px;
+        }
+        .contact-form {
+            margin-top: 15px;
+            
+            .form-group {
+                margin-bottom: 15px;
+
+                label {
+                    font-size: 13px;
+                }
+                .form-control {
+                    font-size: 14px;
+                    height: 50px;
+                }
+            }
+            .form-check {
+                margin-bottom: -3px;
+            }
+        }
+    }
+    .contact-image {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .contact-content {
+        padding-left: 0;
+    
+        h2 {
+            font-size: 37px;
+        }
+        .contact-form {
+            .form-group {
+                label {
+                    font-size: 14px;
+                }
+                .form-control {
+                    font-size: 14px;
+                }
+            }
+            .form-check {
+                margin-bottom: -5px;
+            }
+        }
+    }
+    .contact-image {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .contact-content {
+        padding-left: 0;
+    
+        h2 {
+            font-size: 40px;
+        }
+        .contact-form {
+            .form-group {
+                label {
+                    font-size: 15px;
+                }
+                .form-control {
+                    font-size: 15px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+    .contact-image {
+        padding-right: 0;
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

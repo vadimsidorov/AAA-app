@@ -1,0 +1,22 @@
+<div
+    class="cta-area ptb-100"
+    [ngClass]="{'bg-gradient': router?.url === '/' || router?.url === '/studio-agency' || router?.url === '/business-agency' || router?.url === '/digital-marketing'}"
+>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-8">
+                <div class="cta-content">
+                    <h2>Have a Project in Mind?</h2>
+                    <p>Let's get to work</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-4">
+                <div class="cta-btn-box">
+                    <button (click)="onClick('contact')" class="default-btn">
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

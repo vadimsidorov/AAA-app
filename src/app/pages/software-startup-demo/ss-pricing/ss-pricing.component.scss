@@ -1,0 +1,232 @@
+.section-title {
+    margin-bottom: 0;
+    max-width: 100%;
+}
+.pricing-box {
+	z-index: 1;
+	padding: 40px;
+	position: relative;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	border: 1px solid #eeeeee;
+	background-color: var(--whiteColor);
+
+	h3 {
+		font-size: 25px;
+		margin-bottom: 8px;
+	}
+	.price {
+		line-height: 1;
+		color: var(--blackColor);
+		margin: {
+			bottom: 25px;
+			top: 20px;
+		};
+		font: {
+			size: 50px;
+			weight: 700;
+		};
+		span {
+			color: var(--optionalColor);
+			font: {
+				size: 16px;
+				weight: normal;
+			};
+		}
+	}
+	.features-list {
+		padding-left: 0;
+		list-style-type: none;
+		margin: {
+			top: 35px;
+			bottom: 0;
+		};
+		li {
+			margin-bottom: 17px;
+			position: relative;
+            font-weight: 500;
+			padding: {
+				top: 2px;
+				left: 35px;
+				bottom: 2px;
+			};
+			i {
+				transition: var(--transition);
+				transform: translateY(-50%);
+				color: var(--whiteColor);
+				background-color: green;
+				display: inline-block;
+				border-radius: 50%;
+				text-align: center;
+				position: absolute;
+				line-height: 25px;
+				margin-top: -1px;
+				font-size: 14px;
+				height: 25px;
+				width: 25px;
+				top: 50%;
+				left: 0;
+			}
+			&.close {
+				i {
+					background-color: red;
+				}
+			}
+			&:hover {
+				i {
+					background-color: var(--blackColor);
+					color: var(--whiteColor);
+				}
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&::before {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		z-index: -1;
+		content: "";
+		position: absolute;
+		visibility: hidden;
+		transition: var(--transition);
+		background: linear-gradient(
+			180deg,
+			rgba(98, 236, 255, 0.21) 0%,
+			rgba(180, 246, 255, 0.0735) 100%
+		);
+	}
+	&:hover, &.active {
+		&::before {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .section-title {
+        text-align: center !important;
+        margin-bottom: 35px;
+    }
+    .pricing-box {
+        padding: 20px;
+    
+        h3 {
+            font-size: 21px;
+            margin-bottom: 5px;
+        }
+        .price {
+            margin: {
+                bottom: 20px;
+                top: 15px;
+            };
+            font: {
+                size: 35px;
+            };
+            span {
+                font: {
+                    size: 14px;
+                };
+            }
+        }
+        .features-list {
+            margin: {
+                top: 25px;
+            };
+            li {
+                margin-bottom: 13px;
+                padding: {
+                    top: 2px;
+                    left: 27px;
+                    bottom: 2px;
+                };
+                i {
+                    line-height: 20px;
+                    font-size: 12px;
+                    margin-top: 0;
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .section-title {
+        margin-bottom: 40px;
+        text-align: center !important;
+    }
+    .pricing-box {
+        padding: 25px;
+    
+        h3 {
+            font-size: 23px;
+            margin-bottom: 5px;
+        }
+        .price {
+            margin: {
+                bottom: 20px;
+                top: 15px;
+            };
+            font: {
+                size: 40px;
+            };
+            span {
+                font: {
+                    size: 15px;
+                };
+            }
+        }
+        .features-list {
+            margin: {
+                top: 25px;
+            };
+            li {
+                margin-bottom: 13px;
+                padding: {
+                    top: 2px;
+                    left: 30px;
+                    bottom: 2px;
+                };
+                i {
+                    line-height: 22px;
+                    margin-top: -1px;
+                    font-size: 13px;
+                    height: 22px;
+                    width: 22px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .section-title {
+        margin-bottom: 45px;
+        text-align: center !important;
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

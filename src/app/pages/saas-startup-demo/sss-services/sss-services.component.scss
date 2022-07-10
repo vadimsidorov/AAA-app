@@ -1,0 +1,91 @@
+.saas-services-box {
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+    transition: var(--transition);
+    background-color: var(--whiteColor);
+
+    .icon {
+        line-height: 1;
+        display: block;
+        font-size: 60px;
+        margin-bottom: 22px;
+        background: var(--gradientColor); 
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h3 {
+        margin-bottom: 12px;
+        font-size: 25px;
+    }
+    &.color-white {
+        border-color: #272836;
+        background-color: #040611;
+
+        h3 {
+            color: var(--whiteColor);
+
+            a {
+                color: var(--whiteColor);
+            }
+        }
+        p {
+            opacity: 0.9;
+            color: var(--whiteColor);
+        }
+    }
+    &:hover {
+        border-color: var(--primaryColor) !important;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .saas-services-box {
+        padding: 20px 15px;
+    
+        .icon {
+            font-size: 40px;
+            margin-bottom: 18px;
+        }
+        h3 {
+            margin-bottom: 10px;
+            font-size: 21px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .saas-services-box {
+        padding: 25px 20px;
+    
+        .icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            margin-bottom: 10px;
+            font-size: 23px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

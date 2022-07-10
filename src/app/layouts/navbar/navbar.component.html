@@ -1,0 +1,65 @@
+<!-- Default Navbar -->
+<nav
+    class="navbar-area navbar navbar-expand-lg bg-light"
+    ngStickyNav
+    stickyClass="sticky-box-shadow"
+    [class.active]="classApplied"
+    [ngClass]="{'color-white': router?.url === '/creative-agency' || router?.url === '/it-agency' || router?.url === '/studio-agency' || router?.url === '/saas-startup' || router?.url === '/cyber-security-agency'}"
+>
+    <div class="container">
+        <a
+            class="navbar-brand"
+            routerLink="/"
+            [ngClass]="{'d-none': router?.url === '/creative-agency' || router?.url === '/it-agency' || router?.url === '/studio-agency' || router?.url === '/saas-startup' || router?.url === '/cyber-security-agency'}"
+        >
+            <img src="assets/images/logo.png" alt="logo">
+        </a>
+        <a
+            class="navbar-brand d-none"
+            routerLink="/"
+            [ngClass]="{'d-inline-block': router?.url === '/creative-agency' || router?.url === '/it-agency' || router?.url === '/studio-agency' || router?.url === '/saas-startup' || router?.url === '/cyber-security-agency'}"
+        >
+            <img src="assets/images/logo-white.png" alt="white-logo">
+        </a>
+        <button class="navbar-toggler" type="button" (click)="toggleClass()">
+            <span class="burger-menu">
+                <span class="top-bar"></span>
+                <span class="middle-bar"></span>
+                <span class="bottom-bar"></span>
+            </span>
+        </button>
+        <div
+            class="collapse navbar-collapse"
+            [ngClass]="{'nav-center': router?.url === '/it-agency'}"
+        >
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <span class="nav-link" (click)="onClick('home')">Home</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" (click)="onClick('about')">About Us</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" (click)="onClick('services')">Services</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" (click)="onClick('portfolio')">Portfolio</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" (click)="onClick('team')">Team</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" (click)="onClick('blog')">Blog</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" (click)="onClick('contact')">Contact Us</span>
+                </li>
+            </ul>
+            <div class="others-options">
+                <button (click)="onClick('contact')" class="default-btn">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>

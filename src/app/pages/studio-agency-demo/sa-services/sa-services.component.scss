@@ -1,0 +1,210 @@
+.service-box {
+    z-index: 1;
+    padding: 40px;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    transition: var(--transition);
+    background: {
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    h3 {
+        transition: var(--transition);
+        font-size: 25px;
+        margin: {
+            left: 20px;
+            bottom: 0;
+        };
+    }
+    p {
+        transition: var(--transition);
+        margin-top: 18px;
+    }
+    .features-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        list-style-type: none;
+        margin: {
+            bottom: 0;
+            top: -7px;
+            left: -5px;
+            right: -5px;
+        };
+        li {
+            flex: 0 0 auto;
+            width: 50%;
+            padding: {
+                left: 5px;
+                right: 5px;
+            };
+            span {
+                display: block;
+                margin-top: 10px;
+                position: relative;
+                padding-left: 22px;
+                color: var(--optionalColor);
+                transition: var(--transition);
+
+                i {
+                    transition: var(--transition);
+                    color: var(--blackColor);
+                    position: absolute;
+                    top: 2px;
+                    left: 0;
+                }
+            }
+        }
+    }
+    .default-btn {
+        margin-top: 25px;
+    }
+    &::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        z-index: -1;
+        position: absolute;
+        border-radius: 9px;
+        transition: var(--transition);
+        background-color: var(--whiteColor);
+    }
+    &::after {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        content: '';
+        margin: 8px;
+        z-index: -1;
+        position: absolute;
+        visibility: hidden;
+        border-radius: 9px;
+        background-color: #000000;
+        transition: var(--transition);
+    }
+    &:hover {
+        h3 {
+            color: var(--whiteColor);
+
+            a {
+                color: var(--whiteColor);
+            }
+        }
+        p {
+            color: var(--whiteColor);
+        }
+        .features-list {
+            li {
+                span {
+                    color: var(--whiteColor);
+
+                    i {
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+        &::before {
+            opacity: 0;
+            visibility: hidden;
+        }
+        &::after {
+            opacity: .70;
+            visibility: visible;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .service-box {
+        padding: 20px;
+        
+        h3 {
+            font-size: 21px;
+        }
+        p {
+            margin-top: 15px;
+        }
+        .features-list {
+            margin-top: -10px;
+
+            li {
+                span {
+                    padding-left: 17px;
+    
+                    i {
+                        top: 3px;
+                    }
+                }
+            }
+        }
+        .default-btn {
+            margin-top: 18px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .service-box {
+        padding: 25px;
+        
+        h3 {
+            font-size: 23px;
+        }
+        p {
+            margin-top: 15px;
+        }
+        .features-list {
+            margin-top: -10px;
+
+            li {
+                span {
+                    padding-left: 20px;
+    
+                    i {
+                        top: 3px;
+                    }
+                }
+            }
+        }
+        .default-btn {
+            margin-top: 20px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .service-box {
+        padding: 30px;
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .service-box {
+        padding: 30px;
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

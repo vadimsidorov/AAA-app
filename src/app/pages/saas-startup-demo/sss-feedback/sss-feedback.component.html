@@ -1,0 +1,57 @@
+<div id="feedback" class="saas-testimonials-area pt-100">
+    <div class="container">
+        <div class="saas-video-box">
+            <img src="assets/images/saas-startup/video-img.jpg" alt="image">
+            <button class="video-btn" (click)="ngxSmartModalService.getModal('popupOne').open()">
+                <i class="fa-solid fa-play"></i>
+            </button>
+        </div>
+        <div class="saas-testimonials-slides">
+            <owl-carousel-o [options]="feedbackSlides">
+                <ng-template carouselSlide>
+                    <div class="saas-testimonials-item">
+                        <div class="info d-flex align-items-center">
+                            <img src="assets/images/user/user1.jpg" alt="image">
+                            <div class="title">
+                                <h3>Allan Morris</h3>
+                                <span>Director</span>
+                            </div>
+                        </div>
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci dunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.”</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="saas-testimonials-item">
+                        <div class="info d-flex align-items-center">
+                            <img src="assets/images/user/user2.jpg" alt="image">
+                            <div class="title">
+                                <h3>Sarah Taylor</h3>
+                                <span>Manager</span>
+                            </div>
+                        </div>
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci dunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.”</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="saas-testimonials-item">
+                        <div class="info d-flex align-items-center">
+                            <img src="assets/images/user/user3.jpg" alt="image">
+                            <div class="title">
+                                <h3>James Andy</h3>
+                                <span>CEO</span>
+                            </div>
+                        </div>
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci dunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.”</p>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<!-- Video Popup -->
+<div class="video-popup">
+    <ngx-smart-modal #popupOne [identifier]="'popupOne'">
+        <iframe src="https://www.youtube.com/embed/ODfy2YIKS1M" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ngx-smart-modal>
+</div>
