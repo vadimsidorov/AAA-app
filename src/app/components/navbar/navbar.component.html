@@ -1,0 +1,91 @@
+<!-- Default Navbar -->
+<nav
+  class="navbar-area navbar navbar-expand-lg bg-light color-white"
+  ngStickyNav
+  stickyClass="sticky-box-shadow"
+  [class.active]="classApplied"
+>
+  <div class="container">
+    <a class="navbar-brand d-inline-block" routerLink="/">
+      <img src="assets/images/logo.png" alt="logo" />
+    </a>
+    <a class="navbar-brand d-inline-block" routerLink="/">
+      <img src="assets/images/logo-white.png" alt="white-logo" />
+    </a>
+    <button class="navbar-toggler" type="button" (click)="toggleClass()">
+      <span class="burger-menu">
+        <span class="top-bar"></span>
+        <span class="middle-bar"></span>
+        <span class="bottom-bar"></span>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <span
+            class="nav-link"
+            routerLink="/home"
+            routerLinkActive="active"
+            fragment="home"
+            [routerLinkActiveOptions]="routerLinkActiveOptions"
+            >Home</span
+          >
+        </li>
+        <li class="nav-item">
+          <span
+            class="nav-link"
+            routerLink="/home"
+            routerLinkActive="active"
+            fragment="services"
+            [routerLinkActiveOptions]="routerLinkActiveOptions"
+            >Services</span
+          >
+        </li>
+        <li class="nav-item">
+          <span
+            class="nav-link"
+            routerLink="/home"
+            routerLinkActive="active"
+            fragment="profitCalc"
+            [routerLinkActiveOptions]="routerLinkActiveOptions"
+            >Profit Calculator</span
+          >
+        </li>
+        <li class="nav-item">
+          <span
+            class="nav-link"
+            routerLink="/home"
+            routerLinkActive="active"
+            fragment="dataRank"
+            [routerLinkActiveOptions]="routerLinkActiveOptions"
+            >Data Rank</span
+          >
+        </li>
+        <li class="nav-item">
+          <span
+            class="nav-link"
+            routerLink="/home"
+            routerLinkActive="active"
+            fragment="aboutUs"
+            [routerLinkActiveOptions]="routerLinkActiveOptions"
+            >About Us</span
+          >
+        </li>
+
+        <li class="nav-item">
+          <span
+            class="nav-link"
+            routerLink="/home"
+            routerLinkActive="active"
+            fragment="contactUs"
+            [routerLinkActiveOptions]="routerLinkActiveOptions"
+            >Contact Us</span
+          >
+        </li>
+      </ul>
+      <div class="others-options">
+        <button class="default-btn">Get Started</button>
+      </div>
+    </div>
+  </div>
+</nav>
